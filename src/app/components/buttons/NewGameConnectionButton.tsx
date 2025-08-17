@@ -1,20 +1,8 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useRouter } from "next/navigation";
 
 const NewGameConnectionButton = () => {
-  const [[state1, setState1], [state2,setState2]] = [useState(false), useState(false)];
-
-  useEffect(()=>{
-    setState1(true)
-    setState2(false)
-  },[])
-
-  const [demo, setDemo]= useState(false);
-  
-  useEffect(()=>{
-    setDemo(true)
-  },[])
 
   const router = useRouter();
 
